@@ -4,7 +4,7 @@ from queue import Queue
 from bs4 import BeautifulSoup
 
 def getIP():
-    print('Example : www.asd.com')
+    print('Example : www.google.com')
     host=input("url: ")
     print (socket.gethostbyname(host))
 
@@ -250,3 +250,4 @@ while(jawab == 'y'):
     if jawab != 'y': 
         print ("Thanks, Nice to meet you")
         break  
+
